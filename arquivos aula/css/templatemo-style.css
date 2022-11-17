@@ -627,3 +627,7 @@ select:not([multiple]) {
 
     .tm-social-links li { margin-right: 3px; }
 }
+
+.filterSearch{
+    display: initial;
+}

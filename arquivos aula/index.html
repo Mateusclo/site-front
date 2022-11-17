@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
 </head>
 
 <body>
@@ -29,15 +30,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class=" nav-link nav-link-2">Vídeos</a>
+                        <a class=" nav-link nav-link-2" href="video.html">Vídeos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class=" nav-link nav-link-3" href="#">Sobre</a>
+                        <a class=" nav-link nav-link-3" href="sobre.html">Sobre</a>
                     </li>
                 
                     <li class="nav-item">
-                        <a class=" nav-link nav-link-4" href="#">Contato</a>
+                        <a class=" nav-link nav-link-4" href="contato.html">Contato</a>
                     </li>    
                 </ul>
             </div> 
@@ -45,12 +46,12 @@
     </nav>
     <!-- Tag div - (Aqui vamos trabalhar o header do site) -->
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
+        <div class="d-flex tm-search-form">
+            <input id="searchbar" class="form-control tm-search-input" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" onclick="search_hmtl()">
                     <i class="fas fa-search"></i>
             </button>
-        </form>   
+        </div>   
     </div>
     <!-- Tag div -Como Container - (Aqui vamos trabalhar o conteúdo do site) -->
     <div class="container-fluid tm-container-content tm=mt-60">
@@ -65,9 +66,9 @@
                 </form>
             </div>
              <div class="row tm-mb-90 tm-gallery">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-01.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Cabide</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -79,9 +80,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-02.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Perfumes</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -93,9 +94,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-03.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-03.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Clocks</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -107,9 +108,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-04.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-04.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Flores</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -121,23 +122,23 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-05.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-05.jpg" alt="Image" class="img-fluid  ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Grama</h2>
                             <a href="photo-detail.html">ver mais...</a>
                         </figcaption>
                     </figure>
-                    <div class="d-flex justify-content-between tm-text-gray">
+                    <div class="d-flex justify-content-between tm-text-gray ">
                         <span class="tm-text-gray-light">18 Out 2022</span>
                         <span> ||</span>
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-06.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-06.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Fone</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -149,9 +150,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-07.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-07.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Kombi</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -163,9 +164,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-08.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-08.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Cidade</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -177,8 +178,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch ">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-09.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Abstrato</h2>
@@ -191,9 +192,9 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
-                        <img src="img/img-10.jpg" alt="Image" class="img-fluid">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch ">
+                    <figure class="effect-ming tm-video-item ">
+                        <img src="img/img-10.jpg" alt="Image" class="img-fluid ">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Folhas</h2>
                             <a href="photo-detail.html">ver mais...</a>
@@ -205,8 +206,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-11.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Rosas</h2>
@@ -219,8 +220,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-12.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Abstrato</h2>
@@ -233,8 +234,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-13.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Barco</h2>
@@ -247,8 +248,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-14.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Oceano</h2>
@@ -261,8 +262,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-15.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Tartarugas</h2>
@@ -275,8 +276,8 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-                    <figure class="effect-ming tm-video-item">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filterSearch">
+                    <figure class="effect-ming tm-video-item ">
                         <img src="img/img-16.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex aling-items-center justify-content-center">
                             <h2>Praias</h2>
@@ -333,5 +334,7 @@
 </body>
 
 <script src="js/plugins.js"></script>
+<script src="js/buscar.js"></script>
+
 
 </html>
