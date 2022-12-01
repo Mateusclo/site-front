@@ -1,212 +1,221 @@
-<div class="container-fluid tm-mt-60">
+<!DOCTYPE html>
+<html lang="pt_BR">
 
-    <div class="row tm-mb-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
 
-        <div class="col-lg-4 col-12 mb-5">
+<body class="p-3 mb-2 bg-dark text-white">
+    <!-- Tag nav - (seção de uma página que aponta para outras páginas ou para outras áreas da página)  -->
+        <nav class="navbar navbar-expand-lg " > 
+            <div class=" container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-dice-6-fill"></i>
+                    <h1 class="tm-site-title mb-0">Meus Games</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-            <h2 class="tm-text-primary mb-5">Página de Contato</h2>
-
-            <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
-
-                <div class="form-group">
-
-                    <input type="text" name="name" class="form-control rounded-0" placeholder="Nome" required/>
-
-                </div>
-
-                <div class="form-group">
-
-                    <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required/>
-
-                </div>
-
-                <div class="form-group">
-
-                    <select class="form-control" id="contact-select" name="inquiry">
-
-                        <option value="creative">História</option>
-
-                        <option value="uiux">Personagens</option>
-
-                        <option value="sales">Outro...</option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Mensagem" required=></textarea>
-
-                </div>
-
-                <div class="form-group tm-text-right">
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-        <div class="col-lg-4 col-12 mb-5">
-
-            <div class="tm-address-col">
-
-                <h2 class="tm-mb-5">Our Address</h2>
-
-                <p class="tm-mb-50">
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem cumque, quasi ullam obcaecati doloribus adipisci reprehenderit tempora repudiandae 
-                    dolores aut delectus, unde ab totam nobis! Incidunt tempora laboriosam officiis cupiditate?
-
-                </p>
-
-                <p class="tm-mb-50">
-
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem cumque, quasi ullam obcaecati doloribus adipisci reprehenderit tempora repudiandae 
-                    dolores aut delectus, unde ab totam nobis! Incidunt tempora laboriosam officiis cupiditate?
-
-                </p>
-
-                <ul class="tm-constacts">
-
-                    <li>
-
-                        <a href="#" class="tm-text-gray">
-
-                            <i class="fas fa-envelope"></i>
-
-                            Email: matheus.ch35@hotmail.com
-
-                        </a>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-white bg-dark">
+                        <a class="nav-link nav-link-1 active text-white bg-dark" aria-current="page" href="#">Fotos</a>
                     </li>
 
-                    <li>
-
-                        <a href="#" class="tm-text-gray">
-
-                            <i class="fas fa-phone"></i>
-
-                            Celular: (49)991687649
-
-                        </a>
-
+                    <li class="nav-item text-white bg-dark">
+                        <a class=" nav-link nav-link-2 text-white bg-dark" href="video.html">Vídeos</a>
                     </li>
 
-                    <li>
-
-                        <a href="#" class="tm-text-gray">
-
-                            <i class="fas fa-globe"></i>
-
-                            URL: Não possui
-
-                        </a>
-
+                    <li class="nav-item text-white bg-dark">
+                        <a class=" nav-link nav-link-3 text-white bg-dark" href="sobre.html">Sobre</a>
                     </li>
-
+                
+                    <li class="nav-item text-white bg-dark">
+                        <a class=" nav-link nav-link-4 text-white bg-dark" href="contato.html">Contato</a>
+                    </li>    
                 </ul>
+            </div> 
+        </div>     
+    </nav>
+    <!-- Tag div - (Aqui vamos trabalhar o header do site) -->
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/league-of-legends-logo.webp">
+        <div class="d-flex tm-search-form">
+            <input id="searchbar" class="form-control tm-search-input" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" onclick="search_hmtl()">
+                    <i class="fas fa-search"></i>
+            </button>
+        </div>   
+    </div>
+    <!-- Tag div -Como Container - (Aqui vamos trabalhar o conteúdo do site) -->
+    <div class="container-fluid tm=mt-60">
+        <div class="row tm-mb-50">
+            <div class="col-lg-4 col-12 mb-5">
+                <h2 class="tm-text-primary mb-5">Contact Page</h2>
+                <form id="contact-form" action="https://formsubmit.co/matepadij@gmail.com"method="POST" class="tm-contact-form mx-auto">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />    
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />    
+                    </div>
 
+                    <div class="form-group">
+                        <textarea rows="8" name="message" class="form-control rounded 0" placeholder="Message" required=></textarea>
+                    </div>
+
+                    <div class="form-group tm-text-right">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
             </div>
-
-        </div>
-
-        <div class="col-lg-4 col-12">
-
-            <h2 class="tm-text-primary mb-5">Localização do Game</h2>
-
-            <!-- Map -->
-
-            <div class="mapouter mb-4">
-
-                <div class="gmap-canvas">
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130155.41522791187!2d10.31670445!3d59.3550166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646b723254a629d%3A0xac4b8cd46f51d971!2sT%C3%B8nsberg%2C%20Noruega!5e0!3m2!1spt-BR!2sbr!4v1668559445185!5m2!1spt-BR!2sbr" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <div class="col-lg-4 col-12 mb-5">
+                <div class="tm-address-col">
+                    <h2 class="tm-text-primary mb-5">Our Address</h2>
+                    <p class="tm-mb-50"> Quisque eleifend mi et nisi eleifend pretium. Duis porttitor accumsan arcu id rhoncus.
+                        Praesent fermentu, venenatis ipsum, eget vestibulum purus.</p>
+                    <p class="tm-mb-50"> Nulla ut  scelerisque elit, in fermentum ante. Aliquam congue mettis erat, eget iaculis
+                        enim posuere nec. Quisque risus turpis, tempus in iaculis.</p>
+                        <address class="tm-text-gray tm-mb-50">
+                            120-240 Fusce eleifend varius tempus<br>
+                            Duis consectetur at ligula 10660
+                        </address>
+                        <ul class="tm-contacts">
+                            <li>
+                                <a href="#" class="tm-text-gray">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-text-gray">
+                                    <i class="fas fa-phone"></i>
+                                    Tel: 010-020-0340
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-text-gray">
+                                    <i class=" fas fa-globe"></i>
+                                    URL: www.company.com
+                                </a>
+                            </li>
+                        </ul>
                 </div>
-
             </div>
-
+            <div class="col-lg-4 col-12">
+                <h2 class="t,-text-primary mb-5">Our Location</h2>
+                <!--Map-->
+                <div class="mapouter mb-4">
+                    <div class="gmap-canvas">
+                        <iframe width="100%" height="520" id="gmap-canvas"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1258.374992110248!2d-53.01846975932072!3d-26.864688232885147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1668371421274!5m2!1spt-BR!2sbr" 
+                        frameborder="0" scrolling="no" marginheight="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="row tm-mb-74 tm-people-row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/league-of-legends-logo.webp" alt="Image" class="mb-4 img-fluid">
+                <h2 class="tm-text-primary mb-4">league of Legends</h2>
+                <h3 class="tm-text-secondary h5 mb-4">Chief Executive Officer</h3>
+                <p class="mb-4">
+                    Mauris ante tellus, feugiat nec metus non, bibendum semper velit. Praseant laoreet urna id tristique
+                    fermenetum. Morbi venenatis dui diam mollis pellentesque.
+                </p>
+                <ul class="tm-social pl-0 mb-0">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/maxresdefault.jpg" alt="Image" class="mb-4 img-fluid">
+                <h2 class="tm-text-primary mb-4">Arcane</h2>
+                <h3 class="tm-text-secondary h5 mb-4">Chief Marketing Officer</h3>
+                <p class="mb-4">
+                    Sed faucibus nec velit finibus accumsan. Sed vaius augue et leo pharetra, in varius lacus eleifend. Quisque
+                    ut eleifend lacus.
+                </p>
+                <ul class="tm-social pl-0 mb-0">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/wr-cb1-announcementarticle-banner-1920x1080.png" alt="Image" class="mb-4 img-fluid">
+                <h2 class="tm-text-primary mb-4">Wild Rift</h2>
+                <h3 class="tm-text-secondary h5 mb-4">Accounting Executive</h3>
+                <p class="mb-4">
+                    Sed faucibus nec velit finibus accumsan. Sed vaius augue et leo pharetra, in varius lacus eleifend. Quisque
+                    ut eleifend lacus.
+                </p>
+                <ul class="tm-social pl-0 mb-0">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <img src="img/tft.jpg" alt="Image" class="mb-4 img-fluid">
+                <h2 class="tm-text-primary mb-4">Team fight tactics</h2>
+                <h3 class="tm-text-secondary h5 mb-4">Creative Art Director #C69</h3>
+                <p class="mb-4">
+                    Nunc convallis facilisis. Curabitur gravida rutrum justo sed pulvinar. Pellentesque ac ante in erat bibendum dignissim.
+                </p>
+                <ul class="tm-social pl-0 mb-0">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>          
+    <!-- Tag footer - (Aqui vamos trabalhar o footer do site) -->
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col=md-6 col-sm-6 col-12 px-5 mb-5">
+                    <p>Catalogo<a href="#">Aula FrontEnd</a> Site feito em HTML, CSS e JS</p>    
+                </div>
+                <div class="col-lg-3 col-mb-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-tile">Outros Link</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div> 
+                <div class="col-lg-3 col=md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                    <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright 2022 - Todos os direitos reservados.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    Desenvolvido por <a class="tm-text-gray" href="https://www.google.com.br" 
+                    target="_blank">Alunos do Curso de FrontEnd</a>
+                </div>
+            </div>    
         </div>
+    </footer>
+</body>
 
-    </div>
+<script src="js/plugins.js"></script>
 
-    <div class="row tm-mb-74 tm-people-row">
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-
-            <img src="img/pictures/GOWRG_ProfilePicture_Kratos.jpg" alt="Image" class="mb-4 img-fluid">
-
-            <h2 class="tm-text-primary mb-4">Kratos</h2>
-
-            <h3 class="tm-text-secondary h5 mb-4">Deus da Guerra</h3>
-
-            <p class="mb-4">
-
-                O deus da guerra espartano construiu uma nova vida em Midgard. A paternidade deu a Kratos um novo propósito. Com o Ragnarök se aproximando, 
-                os riscos nunca foram tão altos. Kratos deve se decidir entre proteger o filho e a vida que construíram juntos ou defender os Nove Reinos da guerra catastrófica.
-
-            </p>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-
-            <img src="img/pictures/GOWRG_ProfilePicture_Atreus.jpg" class="mb-4 img-fluid">
-
-            <h2 class="tm-text-primary mb-4">Atreus</h2>
-
-            <h3 class="tm-text-secondary h5 mb-4">Filho de Kratos</h3>
-
-            <p class="mb-4">
-
-                Atreus é um semideus adolescente, filho de Kratos e da Giganta Laufey. Os Gigantes e os Aesir o conhecem como "Loki". Com a iminência do Ragnarök, 
-                Atreus quer a todo custo explorar e compreender melhor a própria identidade para encontrar seu lugar no mundo. Ele treinou muito com o pai e, embora o 
-                relacionamento entre os dois permaneça firme, Atreus anseia por começar a seguir o seu próprio caminho.
-
-            </p>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-
-            <img src="img/pictures/GOWRG_ProfilePicture_Mimir.jpg" class="mb-4 img-fluid">
-
-            <h2 class="tm-text-primary mb-4">Mimir</h2>
-
-            <h3 class="tm-text-secondary h5 mb-4">Homem mais inteligente vivo</h3>
-
-            <p class="mb-4">
-
-                Ele pode até ser uma cabeça decepada que depois foi ressuscitada, mas o Mimir continua com o título de homem mais inteligente vivo. Quando Kratos e Atreus o 
-                libertaram da árvore em que Odin o mantinha aprisionado, Mimir se juntou à aventura deles e se tornou um amigo de confiança e conselheiro tanto para o pai 
-                quanto para o filho. Com os Nove Reinos afundando no caos, agora eles precisarão da sabedoria do Mimir mais do que nunca.
-
-            </p>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-
-            <img src="img/pictures/GOWRG_ProfilePicture_Freya.jpg" alt="Image" class="mb-4 img-fluid">
-
-            <h2 class="tm-text-primary mb-4">Freya</h2>
-
-            <h3 class="tm-text-secondary h5 mb-4">Ex-rainha das Valquírias</h3>
-
-            <p class="mb-4">
-
-                Freya é uma deusa Vanir, já foi líder das Valquírias, ex-mulher de Odin e antiga rainha dos Aesir. Após a morte do seu amado filho Baldur, 
-                que estava afastado dela, Freya jurou uma vingança violenta contra Kratos e Atreus.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</div>  
+</html>

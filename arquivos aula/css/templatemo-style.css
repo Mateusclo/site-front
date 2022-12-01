@@ -631,3 +631,60 @@ select:not([multiple]) {
 .filterSearch{
     display: initial;
 }
+
+.curtir {
+    color: black;
+    cursor: pointer;
+}
+.curtir2 {
+    color: black;
+    cursor: pointer;
+}
+.curtir3 {
+    color: black;
+    cursor: pointer;
+}
+.curtir4 {
+    color: black;
+    cursor: pointer;
+}
+.curtir5 {
+    color: black;
+    cursor: pointer;
+}
+.curtir6 {
+    color: black;
+    cursor: pointer;
+}
+.curtir7 {
+    color: black;
+    cursor: pointer;
+}
+.curtir8 {
+    color: black;
+    cursor: pointer;
+}
+.curtido {
+    color: red;
+}
+.curtido2 {
+    color: red;
+}
+.curtido3 {
+    color: red;
+}
+.curtido4 {
+    color: red;
+}
+.curtido5 {
+    color: red;
+}
+.curtido6 {
+    color: red;
+}
+.curtido7 {
+    color: red;
+}
+.curtido8 {
+    color: red;
+}
